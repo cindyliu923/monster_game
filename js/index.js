@@ -95,9 +95,19 @@ class Hero extends BaseCharacter {
           _this.element.getElementsByClassName("heal-text")[0].classList.add("healed");
           _this.element.getElementsByClassName("heal-text")[0].textContent = 30; 
         }
-        i = i + 1   
-        if (i > 8){     
-           _this.element.getElementsByClassName("heal-text")[0].classList.remove("healed");
+        _this.element.getElementsByClassName('heal-image' + i)[0].style.display = "block";
+        i++;   
+        if (i > 8){ 
+          _this.element.getElementsByClassName("heal-image1")[0].style.display = "none";
+          _this.element.getElementsByClassName("heal-image2")[0].style.display = "none";
+          _this.element.getElementsByClassName("heal-image3")[0].style.display = "none";
+          _this.element.getElementsByClassName("heal-image4")[0].style.display = "none";
+          _this.element.getElementsByClassName("heal-image5")[0].style.display = "none";
+          _this.element.getElementsByClassName("heal-image6")[0].style.display = "none";
+          _this.element.getElementsByClassName("heal-image7")[0].style.display = "none";
+          _this.element.getElementsByClassName("heal-image8")[0].style.display = "none";    
+          
+          _this.element.getElementsByClassName("heal-text")[0].classList.remove("healed");
           _this.element.getElementsByClassName("heal-text")[0].textContent = "";
           clearInterval(_this.id);  
         }       
@@ -115,9 +125,19 @@ class Hero extends BaseCharacter {
           _this.element.getElementsByClassName("heal-text")[0].classList.add("healed");
           _this.element.getElementsByClassName("heal-text")[0].textContent = 30; 
         }
-        i = i + 1   
-        if (i > 8){     
-           _this.element.getElementsByClassName("heal-text")[0].classList.remove("healed");
+        _this.element.getElementsByClassName('heal-image' + i)[0].style.display = "block";
+        i++;   
+        if (i > 8){ 
+          _this.element.getElementsByClassName("heal-image1")[0].style.display = "none";
+          _this.element.getElementsByClassName("heal-image2")[0].style.display = "none";
+          _this.element.getElementsByClassName("heal-image3")[0].style.display = "none";
+          _this.element.getElementsByClassName("heal-image4")[0].style.display = "none";
+          _this.element.getElementsByClassName("heal-image5")[0].style.display = "none";
+          _this.element.getElementsByClassName("heal-image6")[0].style.display = "none";
+          _this.element.getElementsByClassName("heal-image7")[0].style.display = "none";
+          _this.element.getElementsByClassName("heal-image8")[0].style.display = "none";    
+          
+          _this.element.getElementsByClassName("heal-text")[0].classList.remove("healed");
           _this.element.getElementsByClassName("heal-text")[0].textContent = "";
           clearInterval(_this.id);  
         }       
