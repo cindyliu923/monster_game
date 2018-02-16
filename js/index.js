@@ -197,9 +197,9 @@ function endTurn() {
 }
 
 function monsterAttack() {
-  hero.getHeal();
   document.getElementsByClassName("skill-block")[0].style.display = "none";
-
+  hero.getHeal();
+  
     setTimeout(function() {
     if (monster.alive) {
       monster.element.classList.add("attacking");
@@ -262,9 +262,13 @@ function finish() {
 document.onkeyup = function(event) {
   var key = String.fromCharCode(event.keyCode);
   if (key == "A") {
-    heroAttack(); 
+    if (document.getElementsByClassName("skill-block")[0].style.display === "block"){
+      heroAttack(); 
+    }
   } 
   if (key == "D") {
-    monsterAttack();
+    if (document.getElementsByClassName("skill-block")[0].style.display === "block"){
+      monsterAttack();
+    }
   }
 }
