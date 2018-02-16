@@ -259,4 +259,12 @@ function finish() {
   }
 }
 
-
+document.onkeyup = function(event) {
+  var key = String.fromCharCode(event.keyCode);
+  if (key == "A") {
+    heroAttack(); 
+  } 
+  if (key == "D") {
+    monsterAttack();
+  }
+}
