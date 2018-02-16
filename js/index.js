@@ -26,15 +26,22 @@ class BaseCharacter {
     _this.id = setInterval(function() {
     
       if (i == 1) {
-          _this.element.getElementsByClassName("effect-image")[0].style.display = "block";
           _this.element.getElementsByClassName("hurt-text")[0].classList.add("attacked");
           _this.element.getElementsByClassName("hurt-text")[0].textContent = damage;
-        }
-      
-        _this.element.getElementsByClassName("effect-image")[0].src = 'images/effect/blade/'+ i +'.png';
+        }     
+        _this.element.getElementsByClassName('effect-image' + i)[0].style.display = "block";
         i++;
+
       if (i > 8) {
-        _this.element.getElementsByClassName("effect-image")[0].style.display = "none";
+        _this.element.getElementsByClassName("effect-image1")[0].style.display = "none";
+        _this.element.getElementsByClassName("effect-image2")[0].style.display = "none";
+        _this.element.getElementsByClassName("effect-image3")[0].style.display = "none";
+        _this.element.getElementsByClassName("effect-image4")[0].style.display = "none";
+        _this.element.getElementsByClassName("effect-image5")[0].style.display = "none";
+        _this.element.getElementsByClassName("effect-image6")[0].style.display = "none";
+        _this.element.getElementsByClassName("effect-image7")[0].style.display = "none";
+        _this.element.getElementsByClassName("effect-image8")[0].style.display = "none";
+
         _this.element.getElementsByClassName("hurt-text")[0].classList.remove("attacked");
         _this.element.getElementsByClassName("hurt-text")[0].textContent = "";
         clearInterval(_this.id);
